@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="container">
+  <p id="display"><span id="result"></span></p>
+  <button class="item" value="7" onclick="enterNumber(this.value)">7</button>
+  <button class="item" value="8" onclick="enterNumber(this.value)">8</button>
+  <button class="item" value="9" onclick="enterNumber(this.value)">9</button>
+  <button class="itemOp" value="+" onclick="operator(this.value)">+</button>
+  <button class="item" value="4" onclick="enterNumber(this.value)">4</button>
+  <button class="item" value="5" onclick="enterNumber(this.value)">5</button>
+  <button class="item" value="6" onclick="enterNumber(this.value)">6</button>
+  <button class="itemOp" value="-" onclick="operator(this.value)">-</button>
+  <button class="item" value="1" onclick="enterNumber(this.value)">1</button>
+  <button class="item" value="2" onclick="enterNumber(this.value)">2</button>
+  <button class="item" value="3" onclick="enterNumber(this.value)">3</button>
+  <button class="itemOp" value="×" onclick="operator(this.value)">×</button>
+  <button class="item0" value="0" onclick="enterNumber(this.value)">0</button>
+  <button class="itemOp" value="÷" onclick="operator(this.value)">÷</button>
+  <button class="item" value="." onclick="enterNumber(this.value)">.</button>
+  <button class="item" onclick="deleteAll()">AC</button>
+  <button class="item" onclick="deleteNumbers()">C</button>
+  <button class="itemOp" onclick="calculate()">Enter</button>
+  </div>
+  <ul id="registry">
+
+  </ul>
+  <footer>Developed by <em><a href="https://www.linkedin.com/in/andres-santilli/">Andres Santilli</a></em></footer>
+<script src="script.js"></script>
+</body>
